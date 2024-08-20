@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>ZoeFirst Contractors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+  <body class="m-0 border-0">
+<!-- hero section  -->
+    <section class="hero" id="hero">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid container-md">
+              <a class="navbar-brand" href="#">
+                <img src="img/ZOEFIRST CONSTRUCTORS LOGO 1.png" alt="">
+              </a>
+              <button
+                class="navbar-toggler fs-1 border-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-md-0 nav-margin">
+                  <li class="nav-item">
+                    <a href="index.html" class="me-md-5 mt-2 btn text-white">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" class="me-md-5 mt-2 btn text-white">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#services" class="me-md-5 mt-2 btn text-white">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#review" class="me-md-5 mt-2 btn text-white">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#gallery" class="btn mt-2 text-white">Gallery</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+       <div class="container business-pitch text-center">
+          <div class="pitch">
+              <h1 class="title text-center text-white fw-bold">ZOEFIRST <br> CONTRACTORS</h1>
+              <h3 class="title-txt text-center text-white fw-semibold">THE ONE STOP HOME IMPROVEMENT SPECIALIST</h3>
+          </div>
+        <!-- Quote trigger modal -->
+          <button type="button" class="quote btn btn-warning" data-bs-toggle="modal" data-bs-target="#getQuote">
+              Get a Quote
+          </button>
+        <!-- Quote Modal -->
+          <div class="modal fade" id="getQuote" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" id="quote-modal">
+              <div class="modal-content border border-light-subtle rounded-3" id="mod">
+                  <div class="modal-header">
+                  <h1 class="modal-title fw-semibold fs-5 fs-md-4 fs-lg-4" id="exampleModalLabel">
+                   Get a Quote</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body fs-5 fs-md-4 fs-lg-4">
+                      <form id="quote-form" onsubmit="reset();">
+                          <div class="mb-3">
+                              <input type="text" class="form-control inputs text-white" id="name" name="name" placeholder="Full Name" required>
+                          </div>
+                          <div class="mb-3">
+                              <input type="email" class="form-control inputs text-white" id="email" name="email" placeholder="Email" required>
+                          </div>
+                          <div class="mb-3">
+                              <input type="tel" class="form-control inputs text-white" id="phone" name="phone" placeholder="Phone Number" required>
+                          </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control inputs text-white" id="project" name="project" placeholder="Project" required>
+                          </div>
+                          <div class="d-flex justify-content-end align-items-center">
+                            <button type="submit" class="btn btn-warning">Submit</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              </div>
+          </div>
+       </div>
+    </section>
+<!-- service section  -->
+    <section class="service container-lg" id="service">
+            <div class="pt-5 d-flex align-items-center text-center justify-content-center">
+                <div class="blackline me-md-5 me-3"></div>
+                <h2 class="fw-medium service-what">What we do</h2>
+                <div class="blackline ms-md-5 ms-3"></div>
+            </div>
+            <div class="service-cards py-3 d-flex gap-3 gap-lg-4 justify-content-center justify-content-lg-center flex-wrap flex-lg-nowrap">
+                  <!-- first card -->
+                  <div class="card shadow col-5 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-between">
+                          <img src="img/Rectangle 7.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h3>Kitchen <br/> Remodeling</h3>
+                          <p class="card-text">Elevate your kitchen to new heights of luxury with exquisite countertops and custom cabinets. Experience culinary bliss in a space designed for both functionality and aesthetics.</p>
+                      </div>
+                      <div class="card-modal d-flex justify-content-center align-items-center">
+                              <!-- KitchenView trigger modal -->
+                            <button type="button" class="mb-3 btn btn-outline-dark button" data-bs-toggle="modal" data-bs-target="#KitchenView">
+                              View More
+                            </button>
+                              <!-- KitchenView Modal -->
+                            <div class="modal fade" id="KitchenView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                          <h1 class="modal-title" id="exampleModalLabel">
+                                              <img src="img/Rectangle 7 (1).png" alt="" class="img-fluid">
+                                          </h1>
+                                          </div>
+                                          <div class="modal-body">
+                                              <h3>Kitchen Remodeling</h3>
+                                              <p class="card-text">Elevate your kitchen to new heights of luxury with exquisite countertops and custom cabinets. Experience culinary bliss in a space designed for both functionality and aesthetics.
+                                              </p> 
+                                              <h5>Services Includes:</h5>
+                                              <p>
+                                                  Design and layout planning<br>Cabinetry installation<br>Countertop replacement 
+                                                  (e.g., granite, quartz, marble)<br>Appliance installation<br>
+                                                  Backsplash tiling<br>Plumbing and electrical work
+                                              </p>
+                                          </div>
+                                          <!-- <div class="modal-footer">
+                                          </div> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+                  <!-- second card -->
+                  <div class="card shadow col-5 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-between">
+                      <img src="img/bathroom small.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h3>Bathroom <br> Remodeling</h3>
+                          <p class="card-text">Revitalize your bathroom – where mornings begin and evenings unwind. Our remodeling ensures comfort, style, and lasting satisfaction.</p>
+                      </div>
+                      <div class="card-modal d-flex justify-content-center align-items-center">
+                          <!-- BathroomView trigger modal -->
+                        <button type="button" class="mb-3 btn btn-outline-dark button" data-bs-toggle="modal" data-bs-target="#BathroomView">
+                          View More
+                        </button>
+                          <!-- BathroomView Modal -->
+                        <div class="modal fade" id="BathroomView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                      <h1 class="modal-title" id="exampleModalLabel">
+                                          <img src="img/bathroom big.png" alt="" class="img-fluid">
+                                      </h1>
+                                      </div>
+                                      <div class="modal-body">
+                                          <h3>Bathroom Remodeling</h3>
+                                          <p class="card-text">Revitalize your bathroom – where mornings begin and evenings unwind. Our remodeling ensures comfort, style, and lasting satisfaction.
+                                          </p> 
+                                          <h5>Services Includes:</h5>
+                                          <p>
+                                              Vanity and sink replacement<br>Tub/shower enclosure installation<br>Tile flooring and wall tiling
+                                              <br>Toilet and fixture replacement<br>
+                                              Lighting and ventilation upgrades<br>Accessibility modifications
+                                          </p>
+                                      </div>
+                                      <!-- <div class="modal-footer">
+                                      </div> -->
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- third card -->
+                  <div class="card shadow col-5 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-between">
+                    <img src="img/basement small.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h3>Basement <br> Finishing</h3>
+                    <p class="card-text">Unlock hidden potential! Transform your basement into a versatile living area. Whether it’s a home theater, gym, or guest suite, we make it functional and inviting.</p>
+                </div>
+                <div class="card-modal d-flex justify-content-center align-items-center">
+                    <!-- BasementView trigger modal -->
+                  <button type="button" class="mb-3 btn btn-outline-dark button" data-bs-toggle="modal" data-bs-target="#BasementView">
+                    View More
+                  </button>
+                    <!-- BasementView Modal -->
+                  <div class="modal fade" id="BasementView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title" id="exampleModalLabel">
+                                    <img src="img/basement big.png" alt="" class="img-fluid">
+                                </h1>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Basement Finishing</h3>
+                                    <p class="card-text">Unlock hidden potential! Transform your basement into a versatile living area. Whether it’s a home theater, gym, or guest suite, we make it functional and inviting.
+                                    </p> 
+                                    <h5>Services Includes:</h5>
+                                    <p>
+                                        Framing and drywall installation<br>Flooring (e.g., laminate, hardwood, carpet)<br>Painting and trim work
+                                        <br>Ceiling installation (e.g., dropped, drywall)<br>
+                                        Electrical and lighting upgrades<br>Plumbing for bathroom or wet bar
+                                    </p>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  </div>
+                  <!-- fourth card -->
+                  <div class="card shadow col-5 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-between">
+                    <img src="img/roof small.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h3>Roof <br> Replacement</h3>
+                    <p class="card-text">Secure your home with a new roof that stands the test of time. Our expert craftsmanship ensures protection, durability, and peace of mind.</p>     
+                  </div>
+                  <div class="card-modal d-flex justify-content-center align-items-center">
+                    <!-- RoofView trigger modal -->
+                  <button type="button" class="mb-3 btn btn-outline-dark button" data-bs-toggle="modal" data-bs-target="#RoofView">
+                    View More
+                  </button>
+                    <!-- RoofView Modal -->
+                  <div class="modal fade" id="RoofView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title" id="exampleModalLabel">
+                                    <img src="img/roof big.png" alt="" class="img-fluid">
+                                </h1>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Roof Replacement</h3>
+                                    <p class="card-text">Secure your home with a new roof that stands the test of time. Our expert craftsmanship ensures protection, durability, and peace of mind.
+                                    </p> 
+                                    <h5>Services Includes:</h5>
+                                    <p>
+                                        Roof tear-off and disposal<br>Installation of new asphalt, metal, or tile roofing
+                                        <br>Gutter and downspout replacement<br>Ventilation and insulation upgrades<br>
+                                        Siding and Exterior Renovations:<br>Siding replacement (e.g., vinyl, fiber cement, wood)<br>
+                                        Window and door replacement<br>Porch, deck, or patio construction<br>Landscaping and hardscaping
+                                    </p>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>   
+            <div class="text-center my-5">
+                    <!-- Quote trigger modal -->
+                <button type="button" class="quoter btn btn-warning" data-bs-toggle="modal" data-bs-target="#getQuote">
+                  Get a Quote
+                </button>
+            </div>
+    </section>
+<!-- about section  -->
+    <section class="about my-2" id="about">
+        <div class="container">
+              <!-- about us -->
+        <div class="d-flex flex-column-reverse flex-lg-row gap-5 align-items-center">
+          <div class="txt-section fw-medium p-2 p-md-1">
+            <h2>About us</h2>
+              <p>Home Improvement is a leading provider of residential and commercial renovation services.</p>
+
+              <p> Founded in 2018, Zoefirst Home Improvement offers a wide range of services, including
+              kitchen and bathroom remodeling, basement finishing, roof and siding replacement, window
+              and door installation, and more. The company prides itself on using high-quality materials,
+              employing skilled and experienced tradespeople, and completing projects on time and within
+              budget.</p>
+              
+              <p>Zoefirst has a team of in-house designers who work closely with customers to create
+              custom renovation plans tailored to their unique needs and preferences. The company also
+              provides financing options to make large-scale home improvement projects more accessible</p>
+
+          </div>
+          <div class="img">
+              <img id="#about3" src="img/about-3.png" alt="" class="img-section">
+          </div>
+      </div>
+      <!-- core values -->
+      <div class="mt-5 d-flex flex-lg-row-reverse flex-column-reverse gap-5 align-items-center">
+          <div class="txt-section fw-medium p-2 p-md-1">
+            <h2 class="text-end">Core values</h2>
+              <p>
+                Quality Craftsmanship: The company is committed to delivering high-quality workmanship on
+                  every project, using top-of-the-line materials and employing skilled, experienced tradespeople.
+              </p>
+
+              <p>
+                Customer Satisfaction: Providing an exceptional customer experience is a top priority. The
+                  company works closely with clients to understand their needs and deliver projects that exceed
+                  their expectations.
+              </p>
+              
+              <p>
+                Integrity:The company operates with honesty, transparency, and ethical business practices.
+                  Customers can trust that they will receive fair pricing and that all work will be completed to the
+                  agreed-upon scope and timeline.
+              </p>
+
+              <p>
+                Innovation: The company stays up-to-date with the latest home improvement trends and
+                  technologies, constantly looking for ways to improve its processes and offer innovative
+                  solutions to customers.
+              </p>
+
+              <p>
+                Community Involvement: The company is committed to being a responsible corporate citizen,
+                  supporting local charities and community initiatives.
+              </p>
+          </div>
+          <div class="img">
+              <img id="#about2" src="img/about-2.png" alt="" class="img-section">
+          </div>
+      </div>
+      <!-- mission -->  
+      <div class="mt-5 d-flex flex-column-reverse flex-lg-row gap-5 align-items-center">
+          <div class="txt-section fw-medium p-2 p-md-1">
+            <h2>Mission</h2>
+              <p>Zoefirst Construction Home Improvement's mission is to enhance the living and working
+                  spaces of our customers by providing top-quality renovation and remodeling services.
+              </p>
+
+              <p>Through exceptional craftsmanship, personalized design, and a customer-centric approach, we strive to
+                  transform homes and businesses, adding value and improving the quality of life for our clients.
+              </p>
+              
+              <p>Our goal is to become the most trusted and respected home improvement company in the
+                  region.
+              </p>
+          </div>
+          <div class="img">
+              <img id="#about1" src="img/about-1.png" alt="" class="img-section">
+          </div>
+      </div>
+      <div class="my-5 d-flex justify-content-center d-lg-block">
+      <!-- Quote trigger modal -->
+        <button type="button" class="quoter btn btn-warning" data-bs-toggle="modal" data-bs-target="#getQuote">
+          Get a Quote
+        </button>
+     </div>
+        </div>
+    </section>
+<!-- expect section  -->
+ <section class="expect">
+  <div class="container text-white">
+    <div class="expectText d-flex pt-4 pt-md-5 align-items-center text-center justify-content-center">
+      <div class="blackline me-md-4 me-3 mb-2"></div>
+      <h5 class="fw-medium expect-what">What to Expect</h5>
+      <div class="blackline me-md-4 ms-3 mb-2"></div>
+  </div>
+  <div class="text-center pt-1 pt-md-2 whyChoseText">
+      <h2 class="fw-semibold">WHY CHOOSE ZOEFIRST CONTRACTORS</h2>
+  </div>
+  <div class="expectList d-flex align-items-center justify-content-center gap-4 justify-content-lg-evenly">
+      <div class="listItem d-flex flex-column align-items-center gap-md-4 gap-2">
+          <div class="listPicture">
+              <img src="img/fa6-solid_handshake.png" id="handshake" alt="" class="img-fluid">
+          </div>
+          <div class="listDesc fw-semibold text-center">Satisfaction</div>
+      </div>
+      <div class="listItem d-flex flex-column align-items-center gap-md-4 gap-2">
+          <div class="listPicture">
+              <img src="img/fa-solid_users.png" alt="" id="users" class="img-fluid">
+          </div>
+          <div class="listDesc fw-semibold text-center">Customer<br>Centric</div>
+      </div>
+      <div class="listItem d-flex flex-column align-items-center gap-md-4 gap-2">
+          <div class="listPicture">
+              <img src="img/ic_sharp-verified.png" alt="" id="verifySharp" class="img-fluid">
+          </div>
+          <div class="listDesc fw-semibold text-center">Expert<br>Designers</div>
+      </div>
+      <div class="listItem d-flex flex-column align-items-center gap-md-4 gap-2">
+          <div class="listPicture">
+              <img src="img/zondicons_trophy.png" alt="" id="trophy" class="img-fluid">
+          </div>
+          <div class="listDesc fw-semibold text-center">High<br>Quality</div>
+      </div>
+      <div class="listItem d-flex flex-column align-items-center gap-md-4 gap-2">
+          <div class="listPicture">
+              <img src="img/mdi_verified-user.png" alt="" id="verifyUser" class="img-fluid">
+          </div>
+          <div class="listDesc fw-semibold text-center">Trusted<br>Brand</div>
+      </div>
+  </div>
+
+  </div>
+ </section>
+<!-- gallery section  -->
+<section class="gallery my-4 container" id="gallery">
+  <p class="text-center pt-4 inspire">Inspiration Gallery</p>
+  <div class="overflow d-flex justify-content-center flex-wrap mb-5">
+      <button id="kitchenCs" class="kitchenCs me-2 mt-3 me-md-4" onclick="kitchenFilter();">Kitchen</button>
+      <button id="bathroomCs" class="bathroomCs mx-2 mt-3 mx-md-4" onclick="bathroomFilter();">Bathroom</button>
+      <button id="basementCs" class="basementCs mx-2 mt-3 mx-md-4" onclick="basementFilter();">Basement</button>
+      <button id="roofCs" class="roofCs mx-2 mx-md-4 mt-3" onclick="roofFilter();">Roof</button>
+      <button id="stairCs" class="stairCs mx-2 mx-md-4 mt-3" onclick="stairFilter();">Stairs</button>
+  </div>
+  <!-- kitchen carousel -->
+  <div id="kitchenCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/kitchen/Rectangle 10 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/kitchen/Rectangle 12 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/kitchen/Rectangle 13 (2).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/kitchen/Rectangle 14 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/kitchen/Rectangle 15 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/kitchen/Rectangle 16.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- bathroom carousel  -->
+  <div id="bathroomCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/bathroom/Rectangle 10.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/bathroom/Rectangle 11.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/bathroom/Rectangle 12.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/bathroom/Rectangle 13.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/bathroom/Rectangle 14.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/bathroom/Rectangle 15.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- basement carousel -->
+  <div id="basementCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/basement/Rectangle 10 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/basement/Rectangle 11 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/basement/Rectangle 12 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/basement/Rectangle 13 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/basement/Rectangle 14 (1).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/basement/Rectangle 15 (1).png" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- roof carousel  -->
+  <div id="roofCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/roof/Rectangle 10.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/roof/Rectangle 11.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/roof/Rectangle 12.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/roof/Rectangle 13.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/roof/Rectangle 14.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/roof/Rectangle 15.png" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- stairs carousel  -->
+  <div id="stairCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="img/stairs/Rectangle 10 (3).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/stairs/Rectangle 11.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/stairs/Rectangle 12 (3).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/stairs/Rectangle 13 (3).png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/stairs/Rectangle 14.png" class="img-fluid" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="img/stairs/Rectangle 15 (3).png" class="img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+<!-- review section -->
+  <section class="reviews pb-3" id="review">
+    <div class="contain container pt-3 d-flex flex-lg-row flex-column align-items-center">
+        <div class="review text-white">
+            <div class="pt-5 d-flex align-items-center text-center justify-content-center">
+                <div class="blackline me-md-5 me-3"></div>
+                <h2 class="fw-medium">Reviews</h2>
+                <div class="blackline ms-md-5 ms-3"></div>
+            </div>
+            <div class="txt text-center p-2 p-md-4 my-5">
+                “My wife and I worked with Zoefirst Construction on a complete home makeover
+                 and we’re thrilled with transformation. From the initial consultation to the 
+                 final walkthrough, the team was knowledgeable, responsive and went abover and
+                  beyond to make sure we were satisfied. Highly recommended!” 
+            </div>
+            <div class="txt text-center p-2 p-md-4">
+                “After getting quotes from several contractors, we decided to go with 
+                ZoeFirst Construction for our whole-house renovation. They really stood 
+                out with their transparency, communication, and high-quality work. The 
+                final result exceeded out expectations and we’re so pleased with our new home”.
+            </div>
+            <div class="txt text-center p-2 p-md-4 my-5">
+                “We hired ZoeFirst Construction to renovate our kitchen and they did an excellent job.
+                 The project was completed on time and within budget. The craftsmanship was top-notch 
+                 and the team was professional and respectful throughout the process,. Highly recommend”.
+            </div>
+        </div>
+        <div class="contact">
+            <div class="form border rounded-4 border-light-subtle p-4">
+                <h3 class="fw-semibold my-4 text-warning text-center">Contact us</h3>
+                <form id="contact-form" onsubmit="reset();">
+                    <input class="form-control inputs text-white" type="text" placeholder="Name" required>
+                    <input class="form-control my-4 inputs text-white" type="email" placeholder="Email" required>
+                    <input class="form-control inputs text-white" type="tel" placeholder="Phone Number" required>
+                    <input class="form-control my-4 inputs text-white" type="text" placeholder="Message" required>
+                    <div class="d-flex my-2 justify-content-end">
+                      <button class="btn btn-warning" type="submit">
+                          Submit
+                      </button>
+                  </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+  </section>
+<!-- footer section  -->
+<section class="footer container-fluid p-5 bg-warning d-flex flex-row align-items-center justify-content-md-around justify-content-between gap-2">
+  <div class="copyright">©</div>
+  <div class="d-flex flex-md-column">
+    <div class="contact-footer">
+      <p class="mb-0">Contact us</p>
+      <p class="fw-semibold">240-601-8936</p>
+  </div>
+      <P class="">4500 Forbes Blvd, Lanham MD 20706</P>
+  </div>
+  
+  <div class="nav-list d-none d-md-flex align-items-center justify-content-evenly">
+      <div class="nav-item">
+        <a href="index.html" class="me-md-2 mt-2 btn text-dark">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#about" class="me-md-2 mt-2 btn text-dark">About</a>
+      </div>
+      <div class="nav-item">
+        <a href="#services" class="me-md-2 mt-2 btn text-dark">Services</a>
+      </div>
+      <div class="nav-item">
+        <a href="#review" class="me-md-2 mt-2 btn text-dark">Contact</a>
+      </div>
+      <div class="nav-item">
+        <a href="#gallery" class="btn mt-2 text-dark">Gallery</a>
+      </div>
+  </div>
+  <div class="">
+      <a href="index.html">
+          <img src="img/logo.png" alt="" class="img-fluid" id="logo">
+      </a>
+  </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Quote script  -->
+    <script>
+      emailjs.init("8Jkmeof3OmYE_KCLO"); 
+  
+      document.getElementById('quote-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+  
+        const form = event.target;
+  
+        emailjs.sendForm('service_40hms29', 'template_fuet1vc', form)
+          .then((result) => {
+            swal("Successful!", "Quote Submitted.", "success");
+          }, (error) => {
+            swal("Unsuccessful!", "Please try again", "error");
+          });
+      });
+    </script>
+    <!-- Contact script  -->
+    <script>
+      emailjs.init("8Jkmeof3OmYE_KCLO"); 
+  
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+  
+        const form = event.target;
+  
+        emailjs.sendForm('service_40hms29', 'template_hamn3wa', form)
+          .then((result) => {
+            swal("Successful!", "Message sent.", "success");
+          }, (error) => {
+            swal("Unsuccessful!", "Please try again", "error");
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,606 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)), url(img/hero-small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.nav-item a {
+    border-bottom: 2px solid white;
+    width: fit-content;
+    border-radius: 0%;
+}
+
+.nav-item:hover {
+    letter-spacing: .25rem;
+    border-bottom: transparent;
+    transition: ease-in-out .5s;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: auto;
+}
+
+.title-txt {
+    font-size: 0.6rem;
+    line-height: auto;
+}
+
+.quote {
+    width: 75%;
+    margin-top: 165px;
+    margin-bottom: 100px;
+    font-size: 0.88rem;
+}
+
+.quoter {
+    width: 75%;
+}
+
+.business-pitch {
+    margin-top: 207px;
+}
+
+.service-cards .card .card-body h3 {
+    color: rgba(139, 107, 0, 1); 
+    font-size: 12.44px;
+    line-height: 13.94px;
+    font-weight: 600;
+}
+.service-cards .card .card-body p, .service-cards .card .card-body button { 
+    font-size: 7.67px;
+    line-height: 9.63px;
+    font-weight: 700;
+}
+
+.service .service-cards .card {
+    max-height: 355px !important;
+    min-width: 160px !important;
+}
+.service .service-cards .card img {
+    max-height: 160.61px !important;
+}
+
+#KitchenView .modal-body h3, #KitchenView .modal-body h5, #BathroomView .modal-body h3, #BathroomView .modal-body h5,
+#BasementView .modal-body h3, #BasementView .modal-body h5, #RoofView .modal-body h3, #RoofView .modal-body h5{
+    color: rgba(139, 107, 0, 1); 
+    font-size: 14.44px;
+    line-height: 13.94px;
+    font-weight: 700;
+}
+
+#KitchenView .modal-body p, #BathroomView .modal-body p, #BasementView .modal-body p, #RoofView .modal-body p{
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+}
+
+.button {
+    font-size: .52rem;
+    line-height: auto;
+}
+
+#quote-modal .modal-content .modal-header h1{
+    color: rgba(213, 175, 48, 1);
+    /* font-size: .98rem; */
+    line-height: auto;
+}
+
+
+#quote-modal .modal-content .modal-header p{
+    font-size: 1.12rem;
+    line-height: auto;
+}
+
+.service-what {
+    font-size: 1.1rem;
+}
+
+ .about .txt-section p {
+    font-size: 9.74px;
+    line-height: 11.87px;
+    text-align: justify;
+}
+
+.about .txt-section p span {
+    /* font-weight: 400; */
+}
+
+.about .txt-section h2 {
+   font-size: 15.58px;
+   line-height: 18.99px;
+   color: rgba(139, 107, 0, 1);
+   font-weight: 700;
+}
+
+#about1 {
+    content:url("img/about-1.png");
+}
+#about2 {
+    content:url("img/about-2.png");
+}
+#about3 {
+    content:url("img/about-3.png");
+}
+
+.expect {
+    background-image: linear-gradient(rgba(139, 107, 0, 0.9), rgba(139, 107, 0, 0.9)), url(img/overlay.png), url(img/expect-bg-small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.blackline {
+    width: 24.55px;
+    border-bottom: 1.5px solid black;
+ }
+
+.expectText .blackline, .review .blackline {
+    width: 24.55px;
+    border-bottom: 1.5px solid white;
+ }
+
+.whyChoseText h2 {
+    font-size: 11.48px;
+    line-height: 13.99px;
+}
+
+.listDesc {
+    font-size: 7px;
+    line-height: 8px;
+ }
+
+#handshake {
+    content:url("img/fa6-solid_handshake\ \(1\).png");
+ }
+#users{
+    content:url("img/fa-solid_users\ \(1\).png");
+ }
+
+#verifySharp{
+    content:url("img/ic_sharp-verified\ \(1\).png");
+ }
+
+#trophy{
+    content:url("img/zondicons_trophy\ \(1\).png");
+ }
+
+#verifyUser{
+    content:url("img/mdi_verified-user\ \(1\).png");
+ }
+
+.expectList {
+    padding-top: 1.56rem;
+    padding-bottom: 2.875rem;
+ }
+
+.expect-what {
+    font-size: 0.8rem;
+ }
+
+#bathroomCarousel, #basementCarousel, #roofCarousel, #stairCarousel {
+    display: none;
+}
+
+.kitchenCs, .bathroomCs, .basementCs, .roofCs, .stairCs {
+    display: inline-flex;
+    padding: 0.34rem 0.8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.31rem;
+    border-radius: 0.4rem;
+    background-color: white;
+}
+
+.kitchenCs {
+ background-color: #d5af30;
+ border-color: transparent;
+}
+
+.kitchenCs:hover, .bathroomCs:hover, .basementCs:hover, .roofCs:hover, .stairCs:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: ease-in-out 0.3s;
+}
+
+.inspire {
+    color: #8B6B00;
+    font-size: 1.37rem;
+}
+
+.reviews {
+    background-image: linear-gradient(rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(img/review\ mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+ .reviews h2 {
+    font-size: 1.2rem;
+    line-height: auto;
+}
+
+.review{
+ max-width: 297.1px;
+}
+
+.reviews .txt {
+    background-color: rgba(213, 175, 48, 0.25);
+    font-size: 0.625rem;
+    line-height: auto;
+    flex-shrink: 0;
+}
+
+.reviews .contain {
+    gap: 20px;
+}
+
+.contact h3 {
+    font-size: 1.1rem;
+    line-height: auto;
+}
+
+.form {
+    width: 20.38rem;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#mod {
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.modal-header {
+    border-bottom: transparent !important;
+}
+
+.modal-footer {
+    border-top: transparent !important;
+}
+
+.modal-content {
+    width: 35.45rem;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+.inputs {
+    flex-shrink: 0;
+    background: rgba(217, 217, 217, 0.00) !important;
+    height: 3.5rem !important;
+    border-radius: 0.9rem !important;
+}
+
+::placeholder {
+    color: white !important;
+    opacity: 1; /* Firefox */
+}
+
+.contact-footer p, .footer p {
+ font-size: 8.83px;
+ line-height: 10.76px;
+}
+
+.copyright {
+    font-size: 1.72rem;
+     color: #202020;
+}
+
+#logo {
+    content: url("img/logo\ \(1\).png");
+}
+@media (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)), url(img/unsplash_-aDGbdTsBZg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .nav-margin {
+        margin-left: 250px;
+    }
+
+    .business-pitch {
+        margin-top: 140px;
+    }
+    
+    .title {
+        font-size: 5rem;
+    }
+    .title-txt {
+        font-size: 1.2rem;
+        letter-spacing: .3rem;
+    }
+    .quote {
+      width: fit-content;
+      margin-top: 104px;
+      margin-bottom: 110px;
+      font-size: 1.24rem;
+    }
+
+    .quoter{
+        width: fit-content;
+    }
+
+    .service-cards .card .card-body h3 {
+        color: rgba(139, 107, 0, 1); 
+        font-size: 24px;
+        line-height: 29.26px;
+        font-weight: 600;
+    }
+    .service-cards .card .card-body p, .service-cards .card .card-body button { 
+        font-size: 14px;
+        line-height: 18.47px;
+        font-weight: 600;
+        color: black;
+    }
+
+    #KitchenView .modal-body h3, #KitchenView .modal-body h5, #BathroomView .modal-body h3, #BathroomView .modal-body h5,
+    #BasementView .modal-body h3, #BasementView .modal-body h5, #RoofView .modal-body h3, #RoofView .modal-body h5{
+        color: rgba(139, 107, 0, 1); 
+        font-size: 28.6px;
+        line-height: 34.86px;
+        font-weight: 700;
+    }
+
+    #KitchenView .modal-body p, #BathroomView .modal-body p, #BasementView .modal-body p, #RoofView .modal-body p{
+        font-size: 17.87px;
+        line-height: 21.79px;
+        font-weight: 600;
+    }
+
+    #quote-modal .modal-title{
+        color: #8b6b00;
+        font-size: 1.82rem;
+        line-height: auto;
+    }
+
+    #quote-modal .modal-content .modal-header .mod-head h1{
+        /* font-size: 1.79rem; */
+        line-height: auto;
+    }
+    
+    
+    #quote-modal .modal-content .modal-header .mod-head p{
+        font-size: 1.12rem;
+        line-height: auto;
+    }
+
+    .service-what, .expect-what {
+        font-size: 2rem;
+    }
+
+    .service .service-cards .card {
+    min-height: 600px !important;
+    min-width: 291px !important;
+    }
+
+    .service .service-cards .card img {
+        max-height: 337px !important;
+    }
+
+    .button {
+        font-size: .88rem;
+        line-height: auto;
+    }
+
+
+    .about .txt-section p {
+        font-size: 20px;
+        line-height: 24.38px;
+        text-align: justify;
+    }
+    
+    .about .txt-section h2 {
+       font-size: 32px;
+       line-height: 39.01px;
+       color: rgba(139, 107, 0, 1);
+    }
+
+    #about1 {
+        content:url("img/undraw_fitting_piece_re_pxay\ 1\ \(1\).png");
+    }
+    #about2 {
+        content:url("img/undraw_product_iteration_kjok\ 1\ \(1\).png");
+    }
+    #about3 {
+        content:url("img/undraw_team_spirit_re_yl1v\ 1\ \(1\).png");
+    }
+
+    .expect {
+        background-image: linear-gradient(rgba(139, 107, 0, 0.9), rgba(139, 107, 0, 0.9)), url(img/overlay.png), url(img/Rectangle\ 9.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .whyChoseText h2 {
+        font-size: 44.43px;
+        line-height: 54.15px;
+    }
+    
+    .listDesc {
+        font-size: 24px;
+        line-height: 29.26px;
+     }
+
+     .blackline {
+        width: 95.02px;
+        border-bottom: 3px solid black;
+     }
+
+     .expectText .blackline, .review .blackline {
+        width: 95.02px;
+        border-bottom: 3px solid white;
+     }
+
+     .expectList {
+        padding-top: 60px;
+     }
+
+     #handshake {
+        content:url("img/fa6-solid_handshake.png");
+     }
+
+     #users{
+        content:url("img/fa-solid_users.png");
+     }
+
+     #verifySharp{
+        content:url("img/ic_sharp-verified.png");
+     }
+
+     #trophy{
+        content:url("img/zondicons_trophy.png");
+     }
+
+     #verifyUser{
+        content:url("img/mdi_verified-user.png");
+     }
+
+     .expectList {
+        padding-top: 4.56rem;
+        padding-bottom: 8.875rem;
+     }
+
+     .kitchenCs, .bathroomCs, .basementCs, .roofCs, .stairCs {
+        display: inline-flex;
+        padding: 0.69rem 2.3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.63rem;
+        border-radius: 0.4rem;
+        background-color: white;
+    }
+    .inspire {
+        font-size: 2rem;
+    }
+    .reviews {
+        background-image: linear-gradient(rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(img/unsplash_-aDGbdTsBZg\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    .review{
+        max-width: 665px;
+    }
+
+    .reviews h2 {
+        font-size: 2rem;
+        line-height: auto;
+    }
+
+    .reviews .txt {
+        background-color: rgba(213, 175, 48, 0.25);
+        font-size: 1.25rem;
+        line-height: auto;
+        flex-shrink: 0;
+    }
+
+    .reviews .contain {
+        gap: 100px;
+    }
+
+    .contact h3 {
+        font-size: 1.51rem;
+        line-height: auto;
+    }
+    
+    .form {
+        width: 29.36rem;
+        height: 31.25rem;
+        flex-shrink: 0;
+    }
+
+    .contact-footer p, .footer p {
+        font-size: 20px;
+        line-height: 24.38px;
+    }
+
+   .copyright {
+        font-size: 3.28rem;
+         color: #202020;
+    }
+
+    .footer .nav-list .nav-item a {
+        border-bottom: 2px solid black;
+        width: fit-content;
+        border-radius: 0%;
+    }
+    
+    .footer .nav-list .nav-item a:hover {
+        letter-spacing: .25rem;
+        border-bottom: transparent;
+        transition: ease-in-out .5s;
+    }
+
+    #logo {
+        content: url("img/logo.png");
+    }
+       
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+
+    .service .service-cards .card {
+        max-height: 620px !important;
+        max-width: 350px !important;
+    }
+    
+    .service .service-cards .card img {
+        max-height: 337px !important;
+    }
+
+    #about1 {
+        content:url("img/undraw_fitting_piece_re_pxay\ 1\ \(1\).png");
+    }
+    #about2 {
+        content:url("img/undraw_product_iteration_kjok\ 1\ \(1\).png");
+    }
+    #about3 {
+        content:url("img/undraw_team_spirit_re_yl1v\ 1\ \(1\).png");
+    }
+
+    .whyChoseText h2 {
+        font-size: 2.2rem;
+        line-height: auto;
+    }
+
+    .quote {
+    width: 50%;
+    }
+
+    .quoter {
+        width: 40%;
+    }
+    
+
+    .service-cards {
+        gap: 80px !important;
+    }
+
+    .expectList {
+        gap: 50px !important;
+    }
+
+    .reviews .contain {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+
+  }
+
