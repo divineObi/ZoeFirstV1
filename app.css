@@ -70,10 +70,6 @@
     max-height: 160.61px !important;
 }
 
-.service .service-cards .card .card-modal .modal .modal-body {
-    max-width: 330px;
-}
-
 .modal-width {
     max-width: 300px !important;
     margin: auto;
@@ -247,9 +243,8 @@
 
 .reviews .txt {
     background-color: rgba(213, 175, 48, 0.25);
-    font-size: 0.625rem;
-    line-height: auto;
-    flex-shrink: 0;
+    font-size: 10.5px;
+    line-height: 14px;
 }
 
 .reviews .contain {
@@ -359,10 +354,6 @@
         line-height: 18.47px;
         font-weight: 600;
         color: black;
-    }
-
-    .service .service-cards .card .card-modal .modal .modal-body {
-        max-width: 500px;
     }
 
     .modal-width {
