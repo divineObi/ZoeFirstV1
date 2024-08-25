@@ -525,8 +525,7 @@
     .reviews .txt {
         background-color: rgba(213, 175, 48, 0.25);
         font-size: 1.25rem;
-        line-height: auto;
-        flex-shrink: 0;
+        line-height: 24px;
     }
 
     .reviews .contain {
