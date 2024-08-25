@@ -79,6 +79,11 @@
     margin: auto;
 }
 
+#quote-modal {
+    max-width: 300px !important;
+    margin: auto;
+}
+
 #KitchenView .modal-body h3, #KitchenView .modal-body h5, #BathroomView .modal-body h3, #BathroomView .modal-body h5,
 #BasementView .modal-body h3, #BasementView .modal-body h5, #RoofView .modal-body h3, #RoofView .modal-body h5{
     color: rgba(139, 107, 0, 1); 
@@ -155,13 +160,13 @@
  }
 
 .whyChoseText h2 {
-    font-size: 11.48px;
-    line-height: 13.99px;
+    font-size: 12.8px;
+    line-height: 14px;
 }
 
 .listDesc {
-    font-size: 7px;
-    line-height: 8px;
+    font-size: 10px;
+    line-height: 12px;
  }
 
 #handshake {
@@ -189,7 +194,7 @@
  }
 
 .expect-what {
-    font-size: 0.8rem;
+    font-size: .9rem;
  }
 
 #bathroomCarousel, #basementCarousel, #roofCarousel, #stairCarousel {
@@ -202,6 +207,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.31rem;
+    border: 0.8px solid black;
     border-radius: 0.4rem;
     background-color: white;
 }
@@ -220,6 +226,7 @@
 .inspire {
     color: #8B6B00;
     font-size: 1.37rem;
+    font-weight: 700;
 }
 
 .reviews {
@@ -283,13 +290,15 @@
 .inputs {
     flex-shrink: 0;
     background: rgba(217, 217, 217, 0.00) !important;
-    height: 3.5rem !important;
+    height: 3rem !important;
     border-radius: 0.9rem !important;
 }
 
 ::placeholder {
     color: white !important;
     opacity: 1; /* Firefox */
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .contact-footer p, .footer p {
@@ -358,6 +367,11 @@
 
     .modal-width {
         max-width: 600px !important;
+        margin: auto;
+    }
+
+    #quote-modal {
+        max-width: 500px !important;
         margin: auto;
     }
 
@@ -446,8 +460,8 @@
     }
     
     .listDesc {
-        font-size: 24px;
-        line-height: 29.26px;
+        font-size: 22px;
+        line-height: 30px;
      }
 
      .blackline {
@@ -563,6 +577,13 @@
 
     #logo {
         content: url("img/logo.png");
+    }
+
+    ::placeholder {
+        color: white !important;
+        opacity: 1; /* Firefox */
+        font-size: 14px;
+        font-weight: 600;
     }
        
   }
