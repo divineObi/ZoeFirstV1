@@ -70,6 +70,15 @@
     max-height: 160.61px !important;
 }
 
+.service .service-cards .card .card-modal .modal .modal-body {
+    max-width: 330px;
+}
+
+.modal-width {
+    max-width: 300px !important;
+    margin: auto;
+}
+
 #KitchenView .modal-body h3, #KitchenView .modal-body h5, #BathroomView .modal-body h3, #BathroomView .modal-body h5,
 #BasementView .modal-body h3, #BasementView .modal-body h5, #RoofView .modal-body h3, #RoofView .modal-body h5{
     color: rgba(139, 107, 0, 1); 
@@ -109,10 +118,6 @@
     font-size: 9.74px;
     line-height: 11.87px;
     text-align: justify;
-}
-
-.about .txt-section p span {
-    /* font-weight: 400; */
 }
 
 .about .txt-section h2 {
@@ -347,6 +352,15 @@
         color: black;
     }
 
+    .service .service-cards .card .card-modal .modal .modal-body {
+        max-width: 500px;
+    }
+
+    .modal-width {
+        max-width: 600px !important;
+        margin: auto;
+    }
+
     #KitchenView .modal-body h3, #KitchenView .modal-body h5, #BathroomView .modal-body h3, #BathroomView .modal-body h5,
     #BasementView .modal-body h3, #BasementView .modal-body h5, #RoofView .modal-body h3, #RoofView .modal-body h5{
         color: rgba(139, 107, 0, 1); 
@@ -357,7 +371,7 @@
 
     #KitchenView .modal-body p, #BathroomView .modal-body p, #BasementView .modal-body p, #RoofView .modal-body p{
         font-size: 17.87px;
-        line-height: 21.79px;
+        line-height: 26px;
         font-weight: 600;
     }
 
