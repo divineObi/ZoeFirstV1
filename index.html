@@ -73,7 +73,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body fs-5 fs-md-4 fs-lg-4">
-                      <form id="quote-form" onsubmit="reset();">
+                      <form id="quote-form">
                           <div class="mb-4 mb-md-3">
                               <input type="text" class="form-control inputs text-white" id="name" name="name" placeholder="Full Name" required>
                           </div>
@@ -599,11 +599,11 @@
         <div class="contact">
             <div class="form border rounded-4 border-light-subtle p-4">
                 <h3 class="fw-semibold my-4 text-warning text-center">Contact us</h3>
-                <form id="contact-form" onsubmit="reset();">
-                    <input class="form-control inputs text-white" type="text" placeholder="Name" required>
-                    <input class="form-control my-4 inputs text-white" type="email" placeholder="Email" required>
-                    <input class="form-control inputs text-white" type="tel" placeholder="Phone Number" required>
-                    <input class="form-control my-4 inputs text-white" type="text" placeholder="Message" required>
+                <form id="contact-form">
+                    <input class="form-control inputs text-white" type="text" name="name" placeholder="Name" required>
+                    <input class="form-control my-4 inputs text-white" type="email" name="email" placeholder="Email" required>
+                    <input class="form-control inputs text-white" type="tel" name="phone" placeholder="Phone Number" required>
+                    <input class="form-control my-4 inputs text-white" type="text" name="message" placeholder="Message" required>
                     <div class="d-flex my-2 justify-content-end">
                       <button class="btn btn-warning" type="submit">
                           Submit
@@ -666,6 +666,7 @@
         emailjs.sendForm('service_zrpet6c', 'template_w3fhllj', form)
           .then((result) => {
             swal("Successful!", "Quote Submitted.", "success");
+            document.getElementById('quote-form').reset();
           }, (error) => {
             swal("Unsuccessful!", "Please try again", "error");
           });
@@ -683,6 +684,7 @@
         emailjs.sendForm('service_zrpet6c', 'template_zdcklhr', form)
           .then((result) => {
             swal("Successful!", "Message sent.", "success");
+            document.getElementById('contact-form').reset();
           }, (error) => {
             swal("Unsuccessful!", "Please try again", "error");
           });
