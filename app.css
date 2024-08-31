@@ -503,9 +503,16 @@
         border-radius: 0.4rem;
         background-color: white;
     }
+
+    .kitchenCs {
+        background-color: #d5af30;
+        border-color: transparent;
+    }
+
     .inspire {
         font-size: 2rem;
     }
+    
     .reviews {
         background-image: linear-gradient(rgba(24, 24, 24, 0.8), rgba(24, 24, 24, 0.8)),url(img/unsplash_-aDGbdTsBZg\ \(1\).png);
         background-repeat: no-repeat;
